@@ -12,28 +12,14 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.center,
-      child: Container(
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          // color: Colors.red,
-          gradient: const LinearGradient(
-            colors: [
-              Color(0xff4fe3e8),
-              Colors.blue,
-            ],
-          ),
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: Colors.green,
-            width: 5,
-            style: BorderStyle.solid,
-          ),
+    return const Center(
+      child: Text(
+        'HELLO WORD',
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.red,
         ),
-        width: 200,
-        height: 200,
-        child: Text('Box'),
       ),
     );
   }
