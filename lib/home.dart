@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './about.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -10,10 +12,16 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.pink,
-      width: MediaQuery.of(context).size.width * 0.2,
-      height: MediaQuery.of(context).size.height * 0.2,
+    return SafeArea(
+      child: Scaffold(
+        body: ElevatedButton(
+          child: Text('Go to about'),
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => About()));
+          },
+        ),
+      ),
     );
   }
 }
