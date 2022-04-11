@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import './about.dart';
-
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -14,14 +12,35 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: ElevatedButton(
-          child: Text('Go to about'),
-          onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => About()));
-          },
+        body: Column(
+          children: [abc(), abc(), abc(), abc()],
         ),
       ),
     );
   }
+}
+
+// Creating Custom Widget
+Widget abc() {
+  return ListTile(
+    leading: CircleAvatar(
+      backgroundImage:
+          NetworkImage('https://avatars.githubusercontent.com/u/44143816?v=4'),
+      radius: 20,
+    ),
+    title: Text('arsalan'),
+    subtitle: Text('manzoor'),
+    trailing: Column(
+      children: [
+        Text('4:25pm'),
+        SizedBox(
+          height: 4,
+        ),
+        CircleAvatar(
+          backgroundColor: Colors.green,
+          radius: 6,
+        ),
+      ],
+    ),
+  );
 }
