@@ -7,18 +7,31 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-// Align Widget is used for aligning item
+// Size ky liyeh hum circle avatar mein radius dyty hain
 
+// Network Image Example
+// class _HomeState extends State<Home> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(
+//       child: CircleAvatar(
+//         radius: 60,
+//         backgroundImage: NetworkImage(
+//             "https://avatars.githubusercontent.com/u/44143816?v=4"),
+//       ),
+//     );
+//   }
+// }
+
+// Asset Image Example
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'HELLO WORD',
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-          color: Colors.red,
+    return Center(
+      child: CircleAvatar(
+        radius: 160,
+        backgroundImage: AssetImage(
+          "assets/images/login-background.jpg",
         ),
       ),
     );
