@@ -11,73 +11,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: SingleChildScrollView(
-            child: Center(
-              child: Column(
-                children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                ],
-              ),
+          appBar: AppBar(
+            title: Center(
+              child: Text('APP BAR'),
             ),
           ),
         ),
