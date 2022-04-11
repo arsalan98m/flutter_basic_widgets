@@ -4,7 +4,6 @@ void main() {
   runApp(MyApp());
 }
 
-// === Row === //
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,16 +11,74 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text('1st Row'),
-              SizedBox(
-                width: 10,
+          body: SingleChildScrollView(
+            child: Center(
+              child: Column(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                ],
               ),
-              Text('2nd Row'),
-              Text('3rd Row'),
-            ],
+            ),
           ),
         ),
       ),
