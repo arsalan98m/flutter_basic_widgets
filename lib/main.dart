@@ -6,6 +6,9 @@ void main() {
 
 // === Container == //
 
+// MaterialApp widget some basic setup for over layout
+// Scaffold is like html body
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
